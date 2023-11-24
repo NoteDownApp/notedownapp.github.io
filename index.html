@@ -17,6 +17,24 @@
             height: 100vh;
             text-align: center;
         }
+        
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50; /* Green */
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #45a049; /* Darker Green */
+        }
 
         .container {
             max-width: 600px;
@@ -44,7 +62,8 @@
         <p>Welcome to NoteDown! Are you ready to start?</p>
         <img src="assets/notedown_icon1024.png" alt="NoteDown">
 
-         <a href="notedown.zip" download="notedown.zip">
+        <a href="notedown.zip" download="notedown.zip" class="download-button">
+        <br>
         <button>Download NoteDown</button>
     </a>
     </div>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moritz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+    <div class="logo">Moritz</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about"><span>About</span></a></li>
+            <li><a href="#projects"><span>Projects</span></a></li>
+            <li><a href="#contact"><span>Contact</span></a></li>
+        </ul>
+    </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Moritz</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onClick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onClick="toggleMenu()"><span>About</span></a></li>
+                <li><a href="#projects" onClick="toggleMenu()"><span>Projects</span></a></li>
+                <li><a href="#contact" onClick="toggleMenu()"><span>Contact</span></a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="../assets/person-vector.png" alt="profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Moritz</h1>
+            <p class="section__text__p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+               <img
+                       src="../assets/github.png"
+                       alt="My Github profile"
+                       class="icon"
+                       onclick="location.href='https://github.com/MoritzSt4'"
+               />
+                <img
+                        src="../assets/linkedin.png"
+                        alt="My LinkedIn profile"
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/moritz-staigl-143a9a269/'"
+                />
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

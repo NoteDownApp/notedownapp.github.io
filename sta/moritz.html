@@ -8,10 +8,10 @@
 </head>
 <body>
     <nav id="desktop-nav">
-    <div class="logo">Moritz</div>
+    <div class="logo">sta</div>
     <div>
         <ul class="nav-links">
-            <li><a href="#about"><span>About</span></a></li>
+            <li><a href="#profile"><span>About</span></a></li>
             <li><a href="#projects"><span>Projects</span></a></li>
             <li><a href="#contact"><span>Contact</span></a></li>
         </ul>
@@ -26,7 +26,7 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onClick="toggleMenu()"><span>About</span></a></li>
+                <li><a href="#profile" onClick="toggleMenu()"><span>About</span></a></li>
                 <li><a href="#projects" onClick="toggleMenu()"><span>Projects</span></a></li>
                 <li><a href="#contact" onClick="toggleMenu()"><span>Contact</span></a></li>
             </div>
@@ -59,6 +59,96 @@
             </div>
         </div>
     </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse my</p>
+        <h1 class="title">recent Projects</h1>
+
+        <!-- NoteDown -->
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="project-row">
+                    <img src="../assets/main_dark.png" alt="NoteDown" class="project-img">
+                    <div>
+                        <h2 class="experience-sub-title project-title">NoteDown MacOS App</h2>
+                        <p class="project-text">NoteDown offers a unique experience by allowing you to effortlessly capture your thoughts on the go with this app. Seamlessly jot down ideas, to-do lists, and inspirations on your digital notepad, available whenever you need it.</p>
+                        <div class="project-btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MoritzSt4/NoteDown'">
+                                GitHub
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://notedownapp.github.io/'">
+                                Website
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tourify -->
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="project-row-reverse">
+                    <img src="../assets/tourify.png" alt="Tourify" class="project-img">
+                    <div>
+                        <h2 class="experience-sub-title project-title">Tourify Flutter App</h2>
+                        <p class="project-text">Tourify offers a unique experience by allowing you to choose from a variety of city guides and navigate through them with ease. Whether you're a local looking to discover hidden gems in your city or a traveler exploring new destinations, Tourify has you covered.</p>
+                        <div class="project-btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MoritzSt4/Tourify'">
+                                GitHub
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/watch?v=2nJ4CxCGlVw&ab_channel=nicklympus'">
+                                Demo Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="earlier-projects">
+        <p class="section__text__p1">Browse my</p>
+        <h1 class="title">older Projects</h1>
+        <div class="experience-details-container">
+            <div class="google-play-container color-container">
+                <div class="project-row">
+                    <img src="../assets/stranded.png" alt="Stranded" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=com.sta.insel3'">
+                    <img src="../assets/mapmind.png" alt="MapMind" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=astaproject.appproject.mapmind'">
+                    <img src="../assets/mnf2.png" alt="MNF2" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=astaproject.appproject.mnf2021'">
+                    <img src="../assets/tipiton.png" alt="Tipiton" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=lbd.tapiton'">
+                    <img src="../assets/mnf.png" alt="MNF" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=cmerce.mitternachtsf&hl=en&gl=US'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                        src="../assets/email.png"
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:Moritz.Staigl@web.de">Moritz.Staigl@web.de</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                        src="../assets/linkedin.png"
+                        alt="LinkedIn icon"
+                        class="icon contact-icon"
+                        onclick="location.href='https://www.linkedin.com/in/moritz-staigl-143a9a269/'"
+                />
+                <p><a href="https://www.linkedin.com/in/moritz-staigl-143a9a269/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+            <p>Copyright &#169; 2023 Moritz Staigl. All Rights Reserved.</p>
+            <a href="privacy.html">privacy policy</a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

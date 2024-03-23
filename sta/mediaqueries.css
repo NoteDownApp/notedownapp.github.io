@@ -13,9 +13,12 @@
 }
 
 @media screen and (max-width: 1200px) {
+    body {
+        zoom: 120%;
+    }
     #profile {
-        height: 53vh;
-        margin-bottom: 0rem;
+        height: 23vh;
+        margin-bottom: 10rem;
     }
     #desktop-nav {
         display: none;

@@ -13,18 +13,18 @@
 }
 
 @media screen and (max-width: 1200px) {
+    #profile {
+        height: 53vh;
+    }
     #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
     }
-    #experience,
-    .experience-details-container {
-        margin-top: 2rem;
-    }
     #profile,
     .section-container {
+        scale: 1.25;
         display: block;
     }
     .arrow {
@@ -90,9 +90,7 @@
     .nav-links li a {
         font-size: 1rem;
     }
-    .experience-sub-title {
-        font-size: 1.25rem;
-    }
+
     .logo {
         font-size: 1.5rem;
     }

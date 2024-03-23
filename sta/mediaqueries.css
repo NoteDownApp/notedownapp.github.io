@@ -56,6 +56,12 @@
     .project-img {
         min-width: 100%;
     }
+    .older-project-img {
+        max-width: 55%;
+        max-height: 55%;
+        align-self: center;
+        margin: 0.75rem;
+    }
 }
 
 @media screen and (max-width: 600px) {

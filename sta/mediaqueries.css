@@ -14,11 +14,11 @@
 
 @media screen and (max-width: 1200px) {
     body {
-        zoom: 120%;
+        zoom: 130%;
     }
     #profile {
         height: 23vh;
-        margin-bottom: 10rem;
+        margin-bottom: 20rem;
     }
     #desktop-nav {
         display: none;

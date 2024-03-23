@@ -1,173 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoteDown</title>
-    <style>
-        body {
-            font-family: 'Helvetica', sans-serif;
-            background-color: #f8f8f8;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            text-align: center;
-            min-height: 100vh;
-
-        }
-
-        footer {
-             font-family: 'Helvetica', sans-serif;
-             font-size: 12px;
-             background-color: #e2e7f9;
-             text-align: center;
-             width: 100%;
-             border-top-right-radius: 20px;
-             border-top-left-radius: 20px;
-            
-        }
-        
-        .download-button {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            background-color: #3498db;
-            color: #fff;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .download-button:hover {
-            background-color: #2E73DB; 
-        }
-
-        .github-button {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            background-color: #333;
-            color: #fff;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .github-button:hover {
-            background-color: #555;
-        }
-
-        .screenshot {
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            margin: 0 auto;
-            width: 100%;
-            height: 100%;
-        }
-
-        .container {
-            max-width: 600px;
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-            font-size: 50px;
-        }
-
-        .iconImg {
-            padding-top: 50px;
-            display: block;
-            margin: 0 auto;
-        }
-        
-        .card {
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            background-color: #e2e7f9;
-            margin: 0 auto;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .card-body {
-            padding: 20px;
-            font-family: 'Courier New', monospace;
-        }
-
-        .feature {
-            margin-bottom: 10px;
-            text-align: left;
-        }
-
-        .install-h1 {
-            font-weight: bold;
-        }
-        
-    </style>
+    <title>Moritz</title>
+    <link rel="stylesheet" href="sta/style.css">
+    <link rel="stylesheet" href="sta/mediaqueries.css">
 </head>
-
 <body>
-    <div> 
-    <div class="container">
-        <br>
-        <img src="assets/notedown_icon1024.png" alt="NoteDown" width="150" height="150" class="iconImg">
-        <h1>NoteDown</h1>
-        <p>Welcome to NoteDown! Are you ready to start?</p>
-       
-        <br> 
-        <div>
-        <a href="NoteDown 1.0.dmg" download="NoteDown 1.0.dmg" class="download-button">
-        Download
-        </a>
-        <a href="https://github.com/MoritzSt4/NoteDown" class="github-button" target="_blank">
-        View on GitHub
-        </a>
-        </div>
-        <br> <br><br> <br>
-        <img src="assets/main_dark.png" alt="NoteDown" height="450" class= "screenshot">
-        <br> <br><br> <br><br> <br>
-        <div class="card">
-            <div class="card-body">
-                <p class="feature">🚀 Easily access your notes from the menu bar.</p>
-                <p class="feature">✅ Save notes directly to your computer.</p>
-                <p class="feature">🖍️ Edit your notes seamlessly.</p> 
-                <p class="feature">👯‍♂️ Copy your notes directly to your clipboard.</p>
-                <p class="feature">🌗 Switch between dark and lightmode.</p>
-            </div>
-        </div>
-        <br> <br><br> <br><br> <br>
-        <div class="card">
-            <div class="card-body">
-                <p class="install-h1">installation guide</p>
-                <p> </p>
-                <p class="feature">1. In the Finder on your Mac, locate the app you want to open</p>
-                <p class="feature">2. Control- / right click the app icon, then choose open from the shortcut menu</p>
-                <p class="feature">3. Click Open</p> 
-                <p class="feature">4. Now you can open it in the future by double-clicking it</p>
-            </div>
-        </div>
-        <br> <br>
+    <nav id="desktop-nav">
+    <div class="logo">sta</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#profile"><span>About</span></a></li>
+            <li><a href="#projects"><span>Projects</span></a></li>
+            <li><a href="#contact"><span>Contact</span></a></li>
+        </ul>
     </div>
-
-    <footer>
-        <a href="about.html" style="color: #000; text-decoration: none; margin-right: 10px;">about me</a>
-        <a href="privacy.html" style="color: #000; text-decoration: none;">privacy policy</a>
-    </footer>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">sta</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onClick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#profile" onClick="toggleMenu()"><span>About</span></a></li>
+                <li><a href="#projects" onClick="toggleMenu()"><span>Projects</span></a></li>
+                <li><a href="#contact" onClick="toggleMenu()"><span>Contact</span></a></li>
+            </div>
         </div>
-</body>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/person-vector.png" alt="profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Moritz</h1>
+            <p class="section__text__p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+               <img
+                       src="assets/github.png"
+                       alt="My Github profile"
+                       class="icon"
+                       onclick="location.href='https://github.com/MoritzSt4'"
+               />
+                <img
+                        src="assets/linkedin.png"
+                        alt="My LinkedIn profile"
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/moritz-staigl-143a9a269/'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse my</p>
+        <h1 class="title">recent Projects</h1>
 
+        <!-- NoteDown -->
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="project-row">
+                    <img src="assets/main_dark.png" alt="NoteDown" class="project-img">
+                    <div>
+                        <h2 class="experience-sub-title project-title">NoteDown MacOS App</h2>
+                        <p class="project-text">NoteDown offers a unique experience by allowing you to effortlessly capture your thoughts on the go with this app. Seamlessly jot down ideas, to-do lists, and inspirations on your digital notepad, available whenever you need it.</p>
+                        <div class="project-btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MoritzSt4/NoteDown'">
+                                GitHub
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='notedown.html'">
+                                Website
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tourify -->
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="project-row-reverse">
+                    <img src="assets/tourify.png" alt="Tourify" class="project-img">
+                    <div>
+                        <h2 class="experience-sub-title project-title">Tourify Flutter App</h2>
+                        <p class="project-text">Tourify offers a unique experience by allowing you to choose from a variety of city guides and navigate through them with ease. Whether you're a local looking to discover hidden gems in your city or a traveler exploring new destinations, Tourify has you covered.</p>
+                        <div class="project-btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MoritzSt4/Tourify'">
+                                GitHub
+                            </button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/watch?v=2nJ4CxCGlVw&ab_channel=nicklympus'">
+                                Demo Video
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- StreetShield -->
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="project-row">
+                    <img src="assets/streetshieldoverview.png" alt="StreetShield" class="project-img">
+                    <div>
+                        <h2 class="experience-sub-title project-title">StreetShield IOS App</h2>
+                        <p class="project-text">StreetShield helps you to improve your visibility when crossing a road at night by displaying a red screen on your phone. Additionally, tapping the shield icon activates a boost mode for increased visibility.</p>
+                        <div class="project-btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MoritzSt4/StreetShield'">
+                                GitHub
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ZielSicher. -->
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="project-row-reverse">
+                    <img src="assets/zielsicher_overview.png" alt="ZielSicher" class="project-img">
+                    <div>
+                        <h2 class="experience-sub-title project-title">ZielSicher. Concept</h2>
+                        <p class="project-text">ZielSicher. is a holistic app project, transitioning from ideation to wireframes and concluding with a polished clickable prototype. Tailored as a navigation app specifically for seniors, the project ensures a tangible, user-friendly concept throughout the entire development process.</p>
+                        <div class="project-btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MoritzSt4/NoteDown'">
+                                visit Blog
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="earlier-projects">
+        <p class="section__text__p1">Browse my</p>
+        <h1 class="title">older Projects</h1>
+        <div class="experience-details-container">
+            <div class="google-play-container color-container">
+                <div class="project-row">
+                    <img src="assets/stranded.png" alt="Stranded" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=com.sta.insel3'">
+                    <img src="assets/mapmind.png" alt="MapMind" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=astaproject.appproject.mapmind'">
+                    <img src="assets/mnf2.png" alt="MNF2" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=astaproject.appproject.mnf2021'">
+                    <img src="assets/tipiton.png" alt="Tipiton" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=lbd.tapiton'">
+                    <img src="assets/mnf.png" alt="MNF" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=cmerce.mitternachtsf&hl=en&gl=US'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                        src="assets/email.png"
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:Moritz@Staigl.de">Moritz@Staigl.de</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                        src="assets/linkedin.png"
+                        alt="LinkedIn icon"
+                        class="icon contact-icon"
+                        onclick="location.href='https://www.linkedin.com/in/moritz-staigl-143a9a269/'"
+                />
+                <p><a href="https://www.linkedin.com/in/moritz-staigl-143a9a269/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+            <p>Copyright &#169; 2023 Moritz Staigl. All Rights Reserved.</p>
+            <a href="sta/privacy.html">privacy policy</a>
+    </footer>
+    <script src="sta/script.js"></script>
+</body>
 </html>

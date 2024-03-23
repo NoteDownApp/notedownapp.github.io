@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteDown</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f8f8f8;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            text-align: center;
+            min-height: 100vh;
+
+        }
+
+        footer {
+             font-family: 'Helvetica', sans-serif;
+             font-size: 12px;
+             background-color: #e2e7f9;
+             text-align: center;
+             width: 100%;
+             border-top-right-radius: 20px;
+             border-top-left-radius: 20px;
+            
+        }
+        
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #2E73DB; 
+        }
+
+        .github-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .github-button:hover {
+            background-color: #555;
+        }
+
+        .screenshot {
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 50px;
+        }
+
+        .iconImg {
+            padding-top: 50px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: #e2e7f9;
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .card-body {
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .feature {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .install-h1 {
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div> 
+    <div class="container">
+        <br>
+        <img src="assets/notedown_icon1024.png" alt="NoteDown" width="150" height="150" class="iconImg">
+        <h1>NoteDown</h1>
+        <p>Welcome to NoteDown! Are you ready to start?</p>
+       
+        <br> 
+        <div>
+        <a href="NoteDown 1.0.dmg" download="NoteDown 1.0.dmg" class="download-button">
+        Download
+        </a>
+        <a href="https://github.com/MoritzSt4/NoteDown" class="github-button" target="_blank">
+        View on GitHub
+        </a>
+        </div>
+        <br> <br><br> <br>
+        <img src="assets/main_dark.png" alt="NoteDown" height="450" class= "screenshot">
+        <br> <br><br> <br><br> <br>
+        <div class="card">
+            <div class="card-body">
+                <p class="feature">🚀 Easily access your notes from the menu bar.</p>
+                <p class="feature">✅ Save notes directly to your computer.</p>
+                <p class="feature">🖍️ Edit your notes seamlessly.</p> 
+                <p class="feature">👯‍♂️ Copy your notes directly to your clipboard.</p>
+                <p class="feature">🌗 Switch between dark and lightmode.</p>
+            </div>
+        </div>
+        <br> <br><br> <br><br> <br>
+        <div class="card">
+            <div class="card-body">
+                <p class="install-h1">installation guide</p>
+                <p> </p>
+                <p class="feature">1. In the Finder on your Mac, locate the app you want to open</p>
+                <p class="feature">2. Control- / right click the app icon, then choose open from the shortcut menu</p>
+                <p class="feature">3. Click Open</p> 
+                <p class="feature">4. Now you can open it in the future by double-clicking it</p>
+            </div>
+        </div>
+        <br> <br>
+    </div>
+
+    <footer>
+        <a href="index.html" style="color: #000; text-decoration: none; margin-right: 10px;">about me</a>
+        <a href="privacy.html" style="color: #000; text-decoration: none;">privacy policy</a>
+    </footer>
+        </div>
+</body>
+
+</html>

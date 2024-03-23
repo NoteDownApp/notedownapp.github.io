@@ -6,6 +6,8 @@
 }
 
 body {
+    max-width: 1700px;
+    margin: 0 auto;
     font-family: "SF Compact", "Segoe UI", "Roboto", "Helvetica Neue", sans-serif ;
 }
 

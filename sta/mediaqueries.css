@@ -45,6 +45,17 @@
     .about-containers {
         margin-top: 0;
     }
+
+    .project-row {
+        flex-direction: column;
+    }
+    .project-row-reverse {
+        flex-direction: column;
+    }
+
+    .project-img {
+        min-width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {

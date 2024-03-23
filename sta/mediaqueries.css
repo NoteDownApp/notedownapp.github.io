@@ -34,6 +34,7 @@
     section,
     .section-container {
         height: fit-content;
+
         scale: 0.9;
     }
     section {

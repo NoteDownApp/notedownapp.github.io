@@ -37,7 +37,6 @@
     section,
     .section-container {
         height: fit-content;
-
         scale: 0.9;
     }
     section {
@@ -56,11 +55,11 @@
         flex-direction: column;
     }
     .project-row-reverse {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .project-img {
-        min-width: 100%;
+        max-width: 100%;
     }
     .older-project-img {
         max-width: 55%;

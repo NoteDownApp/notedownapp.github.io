@@ -100,7 +100,18 @@
       font-weight: bold;
     }
 
+    .responsive-iframe {
+      width: 100%; /* Standardbreite auf 100% setzen */
+      max-width: 400px; /* Maximal zulässige Breite setzen */
+    }
 
+    @media screen and (max-width: 450px) {
+      /* Wenn die Bildschirmbreite kleiner oder gleich 450px ist */
+      .responsive-iframe {
+        width: 100%; /* Die Breite auf 100% einstellen, um sich dem verfügbaren Platz anzupassen */
+        max-width: 300px;
+      }
+    }
 
 
   </style>
@@ -160,6 +171,10 @@
         <div>
 
         </div>
+        <div class="responsive-iframe">
+        <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="400" height="850" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmQlIbqKlT7cvc2tf9PtN75%2F03_design%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D10-1328%26viewport%3D159%252C226%252C0.19%26t%3D9SYqkEXDIpwOxj3T-1%26scaling%3Dscale-down%26starting-point-node-id%3D10%253A1328%26mode%3Ddesign" allowfullscreen></iframe>
+        </div>
+
         </div>
     </div>
 

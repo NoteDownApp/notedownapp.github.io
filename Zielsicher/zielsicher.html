@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zielsicher App concept</title>
+  <script>
+    window.onload = function() {
+      var hash = window.location.hash.substr(1);
+      if (hash) {
+        var target = document.getElementById(hash);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      background-color: #f8f8f8;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      text-align: center;
+      min-height: 100vh;
+
+    }
+
+    footer {
+      font-family: 'Helvetica', sans-serif;
+      font-size: 12px;
+      background-color: #f1ece3;
+      text-align: center;
+      width: 100%;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+
+    }
+
+    .screenshot {
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .screenshotSmall {
+      overflow: hidden;
+      margin: 0 auto;
+      width: 60%;
+      height: 60%;
+    }
+
+    .container {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 50px;
+    }
+
+    .iconImg {
+      padding-top: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .card {
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: #f1ece3;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+    }
+
+    .card-body {
+      padding: 20px;
+      font-family: 'Courier New', monospace;
+    }
+
+    .blogtext {
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .blog-h1 {
+      font-weight: bold;
+    }
+
+
+  </style>
+</head>
+
+<body>
+<div>
+  <div class="container">
+    <br>
+    <img src="Icon.png" alt="Zielsicher" width="150" height="150" class="iconImg">
+    <h1>Zielsicher. App concept</h1>
+    <h5>A Navigation App for Seniors - an app concept from the ideation to the click dummy</h5>
+
+    <br><br>
+    <img src="zielsicher_overview.png" alt="Zielsicher overview" class= "screenshotSmall">
+    <br> <br><br>
+    <div class="card">
+      <div class="card-body">
+        <p class="blog-h1">Ideation</p>
+        <p class="blogtext">In today's fast-paced world, technology offers solutions to a myriad of challenges, aiming to improve the quality of life for people from all walks of life. However, one demographic that often feels left behind in the tech revolution is seniors. Recognizing this gap, an innovative app idea named "Zielsicher" is set to change the narrative by offering a navigation solution tailored specifically to the needs of senior users. This blog post delves into the journey of developing "Zielsicher," from its initial conception to the creation of a final click dummy, emphasizing its user-friendly design and functionality.</p>
+        <p class="blogtext">The inception of "Zielsicher" stemmed from a simple yet profound realization: the existing navigation apps are not designed with the senior population in mind. Seniors often find themselves overwhelmed by complicated interfaces, small text sizes, and a plethora of features that may not be relevant to their needs. "Zielsicher" aims to bridge this gap by providing a navigation app that is simple, straightforward, and specifically designed to cater to the preferences and requirements of senior users.</p>
+        <br>
+        <img src="ideation.001.png" alt="Zielsicher ideation" class= "screenshot">
+      </div>
+    </div>
+    <br>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="blog-h1">Wireframes</p>
+        <p class="blogtext">The development process of "Zielsicher" began with the creation of wireframes. These wireframes served as the skeletal framework of the app, outlining the basic structure and flow without delving into intricate design details. The focus was on creating a user interface that was intuitive and easy to navigate. Key considerations included main navigation buttons, high contrast for better visibility, universal voice control and a simplified menu structure to avoid confusion and cognitive overload.</p>
+        <br>
+        <img src="Navigieren_Wireframes_2.png" alt="Zielsicher wireframes" class= "screenshot">
+      </div>
+    </div>
+
+    <br>
+
+    <div class="card">
+      <div class="card-body">
+        <p class="blog-h1">The Design</p>
+        <p class="blogtext">Moving from wireframes to the actual design phase. The app features a high-contrast color scheme to accommodate users with diminished vision, ensuring that all elements are clearly visible.
+          <br>One of the groundbreaking features of "Zielsicher" is its voice command functionality, allowing users to interact with the app through spoken instructions. This not only makes the app more accessible for those who may find touchscreens challenging but also adds an element of convenience for users who prefer hands-free operation.</p>
+        <br>
+        <img src="zielsicher_design.001.png" alt="Zielsicher first design" class= "screenshot">
+      </div>
+    </div>
+
+    <br>
+    <a id="clickdummy"></a>
+    <div class="card">
+      <div class="card-body">
+        <p class="blog-h1">The Final Click Dummy</p>
+        <p class="blogtext">The culmination of the design process led to the creation of a final click dummy - a highly interactive prototype that simulates the live app. This prototype was meticulously tested with the target audience, gathering invaluable feedback to refine and perfect the user experience.</p>
+        <p>Try it out!</p>
+        <br>
+        <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="400" height="850" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmQlIbqKlT7cvc2tf9PtN75%2F03_design%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D10-1328%26viewport%3D159%252C226%252C0.19%26t%3D9SYqkEXDIpwOxj3T-1%26scaling%3Dscale-down%26starting-point-node-id%3D10%253A1328%26mode%3Ddesign" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <br> <br><br>
+  </div>
+
+  <footer>
+    <a href="index.html" style="color: #000; text-decoration: none; margin-right: 10px;">about me</a>
+    <a href="privacy.html" style="color: #000; text-decoration: none;">privacy policy</a>
+  </footer>
+</div>
+</body>
+
+</html>

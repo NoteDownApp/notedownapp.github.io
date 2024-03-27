@@ -103,6 +103,9 @@
     .responsive-iframe {
       width: 100%; /* Standardbreite auf 100% setzen */
       max-width: 400px; /* Maximal zulässige Breite setzen */
+      margin: 0 auto; /* Horizontal zentrieren */
+      display: flex; /* Flexbox-Layout verwenden */
+      justify-content: center; /* Horizontal zentrieren */
     }
 
     @media screen and (max-width: 450px) {
@@ -110,6 +113,9 @@
       .responsive-iframe {
         width: 100%; /* Die Breite auf 100% einstellen, um sich dem verfügbaren Platz anzupassen */
         max-width: 300px;
+        margin: 0 auto; /* Horizontal zentrieren */
+        display: flex; /* Flexbox-Layout verwenden */
+        justify-content: center; /* Horizontal zentrieren */
       }
     }
 

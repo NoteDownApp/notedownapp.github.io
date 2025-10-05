@@ -168,18 +168,36 @@
         </div>
 
     </section>
+
     <section id="earlier-projects">
         <p class="section__text__p1">Browse my</p>
-        <h1 class="title">older Projects</h1>
+        <h1 class="title">Older Projects</h1>
+
         <div class="experience-details-container">
-            <div class="google-play-container color-container">
-                <div class="project-row">
-                    <img src="assets/stranded.png" alt="Stranded" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=com.sta.insel3'">
-                    <img src="assets/mapmind.png" alt="MapMind" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=astaproject.appproject.mapmind'">
-                    <img src="assets/mnf2.png" alt="MNF2" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=astaproject.appproject.mnf2021'">
-                    <img src="assets/tipiton.png" alt="Tipiton" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=lbd.tapiton'">
-                    <img src="assets/mnf.png" alt="MNF" class="older-project-img" onclick="location.href='https://play.google.com/store/apps/details?id=cmerce.mitternachtsf&hl=en&gl=US'">
-                </div>
+            <div class="project-row">
+                <img src="assets/stranded.png" alt="Stranded" class="older-project-img"
+                     onclick="showProjectDetails('stranded')">
+                <img src="assets/mapmind.png" alt="MapMind" class="older-project-img"
+                     onclick="showProjectDetails('mapmind')">
+                <img src="assets/mnf2.png" alt="MNF2" class="older-project-img"
+                     onclick="showProjectDetails('mnf2')">
+                <img src="assets/tipiton.png" alt="Tipiton" class="older-project-img"
+                     onclick="showProjectDetails('tipiton')">
+                <img src="assets/mnf.png" alt="MNF" class="older-project-img"
+                     onclick="showProjectDetails('mnf')">
+            </div>
+        </div>
+
+        <!-- Bereich für Projektdetails -->
+        <div id="project-details" class="project-details" style="display:none;">
+            <h2 id="project-name"></h2>
+            <p id="project-description"></p>
+            <p><strong>Creator:</strong> <span id="project-creator"></span></p>
+            <p><strong>Year:</strong> <span id="project-year"></span></p>
+            <div class="project-video">
+                <iframe id="project-video" width="560" height="315"
+                        src="" title="YouTube video player"
+                        frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -208,9 +226,78 @@
         </div>
     </section>
     <footer>
-            <p>Copyright &#169; 2023 Moritz Staigl. All Rights Reserved.</p>
+            <p>Copyright &#169; 2025 Moritz Staigl. All Rights Reserved.</p>
             <a href="sta/privacy.html">privacy policy</a>
+            <a href="sta/impressum.html">· Impressum</a>
     </footer>
     <script src="sta/script.js"></script>
 </body>
 </html>
+
+<script>
+    const projects = {
+        stranded: {
+            name: "Stranded the Card Game",
+            description: "Stranded the Card Game is a solo card game where the player draw cards, collect resources, and buy items to overcome challenges. The goal is to gather the right items, like a sailboat or hot air balloon, to make a successful escape.",
+            creator: "Moritz Staigl",
+            year: 2020,
+            video: "https://www.youtube.com/embed/OsApsIXA-Po"
+        },
+        mapmind: {
+            name: "MapMind",
+            description: "MapMind is a simple app for saving and managing locations. Built to explore the Google Maps API, it lets users quickly store places they want to remember and access them anytime.",
+            creator: "Moritz Staigl",
+            year: 2020,
+        },
+        mnf2: {
+            name: "Mitternachtsformel Berechner",
+            description: "Mitternachtsformel Berechner is an updated version of my very first app developed in 2016, featuring a new Neonmorphism-inspired UI. It keeps the original functionality for solving quadratic equations while exploring a fresh, modern design style.",
+            creator: "Moritz Staigl",
+            year: 2019,
+            video: "https://www.youtube.com/embed/leu4w1MO7Zo"
+        },
+        tipiton: {
+            name: "Tipiton",
+            description: "Tipiton is my first mini-game app, designed for smaller devices. Players identify numbers, like picking the fourth highest number, earning points in an endless gameplay loop. It features a timer, a scoring system, making it a simple but engaging challenge.",
+            creator: "Moritz Staigl",
+            year: 2017,
+            video: "https://www.youtube.com/embed/nl_L69P580E"
+        },
+        mnf: {
+            name: "Mitternachtsformel Berechner",
+            description: "Mitternachtsformel Berechner is my very first app, created in 2016. It introduced me to app development, from programming and UI design to publishing on the Google Play Store and managing a Google Developer account. The app itself is a simple tool for solving quadratic equations and at its peak had around 80 active users.",
+            creator: "Moritz Staigl",
+            year: 2016,
+        }
+    };
+
+    function showProjectDetails(key) {
+        const project = projects[key];
+
+        // Projektinfos einfügen
+        document.getElementById("project-name").innerText = project.name;
+        document.getElementById("project-description").innerText = project.description;
+        document.getElementById("project-creator").innerText = project.creator;
+        document.getElementById("project-year").innerText = project.year;
+
+        const videoContainer = document.querySelector(".project-video");
+        const videoIframe = document.getElementById("project-video");
+
+        if (project.video) {
+            // Video einbinden
+            videoIframe.src = project.video;
+            videoContainer.style.display = "block";
+        } else {
+            // Kein Video vorhanden → Container ausblenden
+            videoIframe.src = "";
+            videoContainer.style.display = "none";
+        }
+
+        // Detailbereich anzeigen
+        document.getElementById("project-details").style.display = "block";
+
+        // Optional: scroll zum Detailbereich
+        document.getElementById("project-details").scrollIntoView({ behavior: "smooth" });
+    }
+
+</script>

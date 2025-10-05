@@ -368,7 +368,7 @@ section {
     padding: 0.5rem;
 }
 
-.contact-info-container {
+.contact-info-container-card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -376,7 +376,7 @@ section {
     margin: 1rem;
 }
 
-.contact-info-container p {
+.contact-info-container-card p {
     font-size: larger;
 }
 

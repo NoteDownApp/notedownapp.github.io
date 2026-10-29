@@ -16,6 +16,11 @@
     body {
         zoom: 130%;
     }
+    /* #profile is scaled up below and would otherwise cause sideways scrolling */
+    html,
+    body {
+        overflow-x: hidden;
+    }
     #profile {
         height: 23vh;
         margin-bottom: 20rem;
@@ -117,5 +122,52 @@
     }
     .text-container {
         text-align: justify;
+    }
+}
+/* Phones: undo the zoom/scale tricks above, which were tuned for pages
+   rendered without a viewport tag */
+@media screen and (max-width: 600px) {
+    body {
+        zoom: 1;
+    }
+    #profile,
+    section,
+    .section-container {
+        scale: 1;
+    }
+    section {
+        margin: 0 16px;
+    }
+    #profile {
+        height: auto;
+        margin-bottom: 4rem;
+    }
+    .section__pic-container {
+        width: 240px;
+        height: 240px;
+        margin: 0 auto 2rem;
+    }
+    .experience-details-container {
+        margin: 1.5rem 0;
+    }
+    .details-container {
+        padding: 1rem;
+    }
+    .project-text {
+        margin: 1rem 0.5rem;
+    }
+    .project-btn-container {
+        margin: 1rem 0.5rem;
+        flex-wrap: wrap;
+    }
+    #contact,
+    footer {
+        height: auto;
+    }
+    #contact {
+        margin-bottom: 3rem;
+    }
+    footer {
+        padding: 2rem 0;
     }
 }

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoteDown</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <style>
         body {
             font-family: 'Helvetica', sans-serif;
@@ -30,22 +32,17 @@
             
         }
         
-        .download-button {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            background-color: #3498db;
-            color: #fff;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
+        .store-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
         }
 
-        .download-button:hover {
-            background-color: #2E73DB; 
+        .appstore-link img {
+            display: block;
+            height: 50px;
         }
 
         .github-button {
@@ -124,21 +121,20 @@
     <div> 
     <div class="container">
         <br>
-        <img src="assets/notedown_icon1024.png" alt="NoteDown" width="150" height="150" class="iconImg">
+        <img src="assets/notedown_icon.webp" alt="NoteDown" width="150" height="150" class="iconImg">
         <h1>NoteDown</h1>
         <p>Welcome to NoteDown! Are you ready to start?</p>
        
         <br> 
-        <div>
-        <a href="NoteDown 1.0.dmg" download="NoteDown 1.0.dmg" class="download-button">
-        Download
-        </a>
-        <a href="https://github.com/MoritzSt4/NoteDown" class="github-button" target="_blank">
+        <div class="store-row">
+        <a href="https://apps.apple.com/de/app/notedown/id6754922623?mt=12" class="appstore-link" target="_blank" rel="noopener">
+        <img src="assets/appstore-badge.svg" alt="Download on the App Store"></a>
+        <a href="https://github.com/MoritzSt4/NoteDown" class="github-button" target="_blank" rel="noopener">
         View on GitHub
         </a>
         </div>
         <br> <br><br> <br>
-        <img src="assets/main_dark.png" alt="NoteDown" height="450" class= "screenshot">
+        <img src="assets/main_dark.webp" alt="NoteDown" height="450" class= "screenshot">
         <br> <br><br> <br><br> <br>
         <div class="card">
             <div class="card-body">

@@ -2,7 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Moritz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moritz Staigl – iOS &amp; App Developer</title>
+    <meta name="description" content="Portfolio of Moritz Staigl: iOS and macOS apps like StepIsle, Pokerdex, Taskterminal and NoteDown, plus earlier projects and concepts.">
+    <link rel="canonical" href="https://www.staigl.de/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.staigl.de/">
+    <meta property="og:title" content="Moritz Staigl – iOS &amp; App Developer">
+    <meta property="og:description" content="Portfolio of Moritz Staigl: iOS and macOS apps like StepIsle, Pokerdex, Taskterminal and NoteDown.">
+    <meta property="og:image" content="https://www.staigl.de/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="sta/style.css">
     <link rel="stylesheet" href="sta/mediaqueries.css">
 </head>
@@ -34,7 +46,7 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="assets/person-vector.png" alt="profile picture">
+            <img src="assets/profile.webp" alt="Moritz looking out over a misty valley at sunrise">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
@@ -42,21 +54,15 @@
             <p class="section__text__p2">Master's in Business Informatics</p>
             <p class="section__text__p3">Computer Science Graduate</p>
             <div class="btn-container">
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+                <a class="btn btn-color-1" href="#contact">Contact</a>
             </div>
             <div id="socials-container">
-               <img
-                       src="assets/github.png"
-                       alt="My Github profile"
-                       class="icon"
-                       onclick="location.href='https://github.com/MoritzSt4'"
-               />
-                <img
-                        src="assets/linkedin.png"
-                        alt="My LinkedIn profile"
-                        class="icon"
-                        onclick="location.href='https://www.linkedin.com/in/moritz-staigl-143a9a269/'"
-                />
+               <a href="https://github.com/MoritzSt4" target="_blank" rel="noopener">
+                   <img src="assets/github.png" alt="My Github profile" class="icon" />
+               </a>
+                <a href="https://www.linkedin.com/in/moritz-staigl-143a9a269/" target="_blank" rel="noopener">
+                    <img src="assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+                </a>
             </div>
         </div>
     </section>
@@ -64,19 +70,58 @@
         <p class="section__text__p1">Browse my</p>
         <h1 class="title">recent Projects</h1>
 
-        <!-- Pokerdex -->
+        <!-- StepIsle -->
         <div class="experience-details-container">
             <div class="details-container color-container">
                 <div class="project-row-reverse">
-                    <img src="assets/pokerdex-screens-wide.png" alt="Pokerdex" class="project-img">
+                    <img src="assets/stepisle.webp" alt="StepIsle" class="project-img" loading="lazy">
+                    <div>
+                        <h2 class="experience-sub-title project-title">StepIsle iOS App</h2>
+                        <p class="project-text">StepIsle turns your daily walks into progress. Every step you take in real life helps you build and expand your own island, from a small campfire on the beach to a thriving settlement full of buildings, forests and wildlife.</p>
+                        <div class="project-btn-container">
+                            <a class="btn btn-color-2 project-btn" href="https://stepisle.de/" target="_blank" rel="noopener">
+                                Website
+                            </a>
+                            <a href="https://apps.apple.com/de/app/id6825102984" class="appstore-button" target="_blank" rel="noopener">
+                                <img src="assets/appstore-badge.svg" alt="Download on the App Store" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pokerdex -->
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="project-row">
+                    <img src="assets/pokerdex-screens-wide.webp" alt="Pokerdex" class="project-img" loading="lazy">
                     <div>
                         <h2 class="experience-sub-title project-title">Pokerdex iOS App</h2>
                         <p class="project-text">Pokerdex is a fun and nostalgic app that helps you keep track of every real playing card you have discovered in everyday life. Whether on city streets, in parks, or while traveling, you can record each find and gradually build your own collection and collect badges.</p>
                         <div class="project-btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.pokerdex.de/'">
+                            <a class="btn btn-color-2 project-btn" href="https://www.pokerdex.de/" target="_blank" rel="noopener">
                                 Website
-                            </button>
-                            <a href="https://apps.apple.com/de/app/pokerdex-card-tracker/id6748776664" class="appstore-button" target="_blank">
+                            </a>
+                            <a href="https://apps.apple.com/de/app/pokerdex-card-tracker/id6748776664" class="appstore-button" target="_blank" rel="noopener">
+                                <img src="assets/appstore-badge.svg" alt="Download on the App Store" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Taskterminal -->
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="project-row-reverse">
+                    <img src="assets/taskterminal-screens.webp" alt="Taskterminal" class="project-img" loading="lazy">
+                    <div>
+                        <h2 class="experience-sub-title project-title">Taskterminal iOS App</h2>
+                        <p class="project-text">Taskterminal is a modern task organizer inspired by classic electronic devices. Capture your ideas in the inbox, turn them into a plan with dates, repetitions and groups, and see what needs to be done today, all in a clean, distraction-free interface.</p>
+                        <div class="project-btn-container">
+                            <a href="https://apps.apple.com/de/app/taskterminal/id6788695305" class="appstore-button" target="_blank" rel="noopener">
                                 <img src="assets/appstore-badge.svg" alt="Download on the App Store" />
                             </a>
                         </div>
@@ -89,18 +134,18 @@
         <div class="experience-details-container">
             <div class="details-container color-container">
                 <div class="project-row">
-                    <img src="assets/main_dark.png" alt="NoteDown" class="project-img">
+                    <img src="assets/main_dark.webp" alt="NoteDown" class="project-img" loading="lazy">
                     <div>
                         <h2 class="experience-sub-title project-title">NoteDown MacOS App</h2>
                         <p class="project-text">NoteDown offers a unique experience by allowing you to effortlessly capture your thoughts on the go with this app. Seamlessly jot down ideas, to-do lists, and inspirations on your digital notepad, available whenever you need it.</p>
                         <div class="project-btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MoritzSt4/NoteDown'">
+                            <a class="btn btn-color-2 project-btn" href="https://github.com/MoritzSt4/NoteDown" target="_blank" rel="noopener">
                                 GitHub
-                            </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='notedown.html'">
+                            </a>
+                            <a class="btn btn-color-2 project-btn" href="notedown.html">
                                 Website
-                            </button>
-                            <a href="https://apps.apple.com/de/app/notedown/id6754922623?mt=12" class="appstore-button" target="_blank">
+                            </a>
+                            <a href="https://apps.apple.com/de/app/notedown/id6754922623?mt=12" class="appstore-button" target="_blank" rel="noopener">
                                 <img src="assets/appstore-badge.svg" alt="Download on the App Store" />
                             </a>
                         </div>
@@ -113,17 +158,17 @@
         <div class="experience-details-container">
             <div class="details-container color-container">
                 <div class="project-row-reverse">
-                    <img src="assets/tourify.png" alt="Tourify" class="project-img">
+                    <img src="assets/tourify.webp" alt="Tourify" class="project-img" loading="lazy">
                     <div>
                         <h2 class="experience-sub-title project-title">Tourify Flutter App</h2>
                         <p class="project-text">Tourify offers a unique experience by allowing you to choose from a variety of city guides and navigate through them with ease. Whether you're a local looking to discover hidden gems in your city or a traveler exploring new destinations, Tourify has you covered.</p>
                         <div class="project-btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MoritzSt4/Tourify'">
+                            <a class="btn btn-color-2 project-btn" href="https://github.com/MoritzSt4/Tourify" target="_blank" rel="noopener">
                                 GitHub
-                            </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.youtube.com/watch?v=2nJ4CxCGlVw&ab_channel=nicklympus'">
+                            </a>
+                            <a class="btn btn-color-2 project-btn" href="https://www.youtube.com/watch?v=2nJ4CxCGlVw&amp;ab_channel=nicklympus" target="_blank" rel="noopener">
                                 Demo Video
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -134,14 +179,14 @@
         <div class="experience-details-container">
             <div class="details-container color-container">
                 <div class="project-row">
-                    <img src="assets/streetshieldoverview.png" alt="StreetShield" class="project-img">
+                    <img src="assets/streetshieldoverview.webp" alt="StreetShield" class="project-img" loading="lazy">
                     <div>
-                        <h2 class="experience-sub-title project-title">StreetShield IOS App</h2>
+                        <h2 class="experience-sub-title project-title">StreetShield iOS App</h2>
                         <p class="project-text">StreetShield helps you to improve your visibility when crossing a road at night by displaying a red screen on your phone. Additionally, tapping the shield icon activates a boost mode for increased visibility.</p>
                         <div class="project-btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MoritzSt4/StreetShield'">
+                            <a class="btn btn-color-2 project-btn" href="https://github.com/MoritzSt4/StreetShield" target="_blank" rel="noopener">
                                 GitHub
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -152,17 +197,17 @@
         <div class="experience-details-container">
             <div class="details-container color-container">
                 <div class="project-row-reverse">
-                    <img src="assets/zielsicher_overview.png" alt="ZielSicher" class="project-img">
+                    <img src="assets/zielsicher_overview.webp" alt="ZielSicher" class="project-img" loading="lazy">
                     <div>
                         <h2 class="experience-sub-title project-title">ZielSicher. Concept</h2>
                         <p class="project-text">ZielSicher. is a holistic app project, transitioning from ideation to wireframes and concluding with a polished clickable prototype. Tailored as a navigation app specifically for seniors, the project ensures a tangible, user-friendly concept throughout the entire development process.</p>
                         <div class="project-btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='Zielsicher/zielsicher.html'">
+                            <a class="btn btn-color-2 project-btn" href="Zielsicher/zielsicher.html">
                                 Visit Blog
-                            </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='Zielsicher/zielsicher.html#clickdummy'">
+                            </a>
+                            <a class="btn btn-color-2 project-btn" href="Zielsicher/zielsicher.html#clickdummy">
                                 Click Dummy
-                            </button>
+                            </a>
 
                         </div>
                     </div>
@@ -178,15 +223,15 @@
 
         <div class="experience-details-container">
             <div class="project-row">
-                <img src="assets/stranded.png" alt="Stranded" class="older-project-img"
+                <img src="assets/stranded.png" alt="Stranded" class="older-project-img" loading="lazy"
                      onclick="showProjectDetails('stranded')">
-                <img src="assets/mapmind.png" alt="MapMind" class="older-project-img"
+                <img src="assets/mapmind.png" alt="MapMind" class="older-project-img" loading="lazy"
                      onclick="showProjectDetails('mapmind')">
-                <img src="assets/mnf2.png" alt="MNF2" class="older-project-img"
+                <img src="assets/mnf2.png" alt="MNF2" class="older-project-img" loading="lazy"
                      onclick="showProjectDetails('mnf2')">
-                <img src="assets/tipiton.png" alt="Tipiton" class="older-project-img"
+                <img src="assets/tipiton.png" alt="Tipiton" class="older-project-img" loading="lazy"
                      onclick="showProjectDetails('tipiton')">
-                <img src="assets/mnf.png" alt="MNF" class="older-project-img"
+                <img src="assets/mnf.png" alt="MNF" class="older-project-img" loading="lazy"
                      onclick="showProjectDetails('mnf')">
             </div>
         </div>
@@ -218,26 +263,20 @@
                 <p><a href="mailto:Moritz@Staigl.de">Moritz@Staigl.de</a></p>
             </div>
             <div class="contact-info-container-card">
-                <img
-                        src="assets/linkedin.png"
-                        alt="LinkedIn icon"
-                        class="icon contact-icon"
-                        onclick="location.href='https://www.linkedin.com/in/moritz-staigl-143a9a269/'"
-                />
+                <a href="https://www.linkedin.com/in/moritz-staigl-143a9a269/" target="_blank" rel="noopener">
+                    <img src="assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                </a>
                 <p><a href="https://www.linkedin.com/in/moritz-staigl-143a9a269/">LinkedIn</a></p>
             </div>
         </div>
     </section>
     <footer>
-            <p>Copyright &#169; 2025 Moritz Staigl. All Rights Reserved.</p>
+            <p>Copyright &#169; 2026 Moritz Staigl. All Rights Reserved.</p>
             <a href="sta/privacy.html">privacy policy</a>
             <a href="sta/impressum.html">· Impressum</a>
     </footer>
     <script src="sta/script.js"></script>
-</body>
-</html>
-
-<script>
+    <script>
     const projects = {
         stranded: {
             name: "Stranded the Card Game",
@@ -304,3 +343,5 @@
     }
 
 </script>
+</body>
+</html>
